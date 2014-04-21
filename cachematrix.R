@@ -1,10 +1,12 @@
 # R Programming
 # Programming Assignment 2
 
-## Put comments here that give an overall description of what your
-## functions do
-
 # This function creates a special "matrix" object that can cache its inverse.
+# It is is really a list containing a function to
+#   set the value of the matrix
+#   get the value of the matrix
+#   set the value of the inverse
+#   get the value of the inverse
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
     set <- function(y) {
